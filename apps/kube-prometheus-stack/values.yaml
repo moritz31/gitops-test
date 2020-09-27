@@ -1,0 +1,19 @@
+prometheusOperator:
+  serviceAccount:
+    create: false
+  tlsProxy:
+    image:
+      repository: cablespaghetti/ghostunnel
+      tag: latest
+  image:
+    tag: v0.42.1
+  prometheusConfigReloaderImage:
+    tag: v0.42.1
+prometheus:
+  serviceAccount:
+    create: false
+grafana:
+  enabled: false
+kubeStateMetrics:
+  enabled: false
+  

@@ -11,6 +11,7 @@ kube-prometheus-stack:
     prometheusConfigReloaderImage:
       tag: v0.42.1
   prometheus:
+    enabled: true
     serviceAccount:
       create: false
   grafana:

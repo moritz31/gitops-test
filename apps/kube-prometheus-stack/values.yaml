@@ -13,9 +13,9 @@ kube-prometheus-stack:
         repository: cablespaghetti/ghostunnel
         tag: latest
     image:
-      tag: v0.42.1
+      tag: v0.39.0
     prometheusConfigReloaderImage:
-      tag: v0.42.1
+      tag: v0.39.0
   prometheus:
     enabled: true
     serviceAccount:

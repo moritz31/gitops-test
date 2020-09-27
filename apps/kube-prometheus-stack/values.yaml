@@ -1,4 +1,5 @@
 kube-prometheus-stack:
+  prometheusOperator:
     tlsProxy:
       image:
         repository: cablespaghetti/ghostunnel

@@ -16,5 +16,7 @@ kube-prometheus-stack:
   grafana:
     enabled: false
   kubeStateMetrics:
-    enabled: false
+    image:
+      repository: carlosedp/kube-state-metrics
+      tag: v1.9.6
   

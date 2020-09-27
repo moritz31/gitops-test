@@ -1,4 +1,10 @@
 kube-prometheus-stack:
+  global:
+    rbac:
+      create: false
+  alertmanager:
+    serviceAccount:
+      create: false
   prometheusOperator:
     serviceAccount:
       create: false

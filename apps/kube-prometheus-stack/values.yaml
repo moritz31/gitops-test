@@ -1,13 +1,4 @@
 kube-prometheus-stack:
-  global:
-    rbac:
-      create: false
-  alertmanager:
-    serviceAccount:
-      create: false
-  prometheusOperator:
-    serviceAccount:
-      create: false
     tlsProxy:
       image:
         repository: cablespaghetti/ghostunnel
@@ -16,14 +7,6 @@ kube-prometheus-stack:
       tag: v0.39.0
     prometheusConfigReloaderImage:
       tag: v0.39.0
-  prometheus:
-    enabled: true
-    serviceAccount:
-      create: false
-    prometheusSpec:
-      image:
-        repository: quay.io/prometheus/prometheus
-        tag: v2.21.0
   grafana:
     sidecar:
       image:

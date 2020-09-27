@@ -14,6 +14,10 @@ kube-prometheus-stack:
     enabled: true
     serviceAccount:
       create: false
+    prometheusSpec:
+      image:
+        repository: quay.io/prometheus/prometheus
+        tag: v2.21.0
   grafana:
     sidecar:
       image:
